@@ -16,4 +16,9 @@ public class Profesor extends Osoba {
     public void dohvatiOpisUloge() {
         System.out.println("Ja sam profesor " + getFirstName() + " " + getLastName() + " i nalazim se na kolegiju: " + kolegij);
     }
+    @Override
+    public String toString() {
+        return "Profesor: " + getFirstName() + " " + getLastName() +
+                " (" + getAge() + " god), Kolegij: " + kolegij;
+    }
 }
